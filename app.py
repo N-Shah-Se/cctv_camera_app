@@ -2,7 +2,7 @@ from flask import Flask, render_template, Response
 import cv2
 #Initialize the Flask app
 app = Flask(__name__)
-
+ 
 # camera = cv2.VideoCapture("rtsp://admin:Kib#1234@192.168.1.1:8800/Streaming/live/ch00_0")
 camera = cv2.VideoCapture("http://admin:Kib%25201234@192.168.1.1/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=admin&pwd=Kib%25201234")
 
